@@ -6,3 +6,13 @@ const alumns = [
    { name: "Raquel Benito", T1: true, T2: true, T3: true },
 ];
 
+for (let i = 0; i < alumns.length; i++) {
+   const alum = alumns[i];
+   if (
+      (alum.T1 == true && alum.T2 == true) ||
+      (alum.T1 == true && alum.T3 == true) ||
+      (alum.T2 && alum.T3 == true)
+   ) {
+      console.log(alum);
+   }
+}

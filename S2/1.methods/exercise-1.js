@@ -9,7 +9,7 @@ const products = [
 
 for (let i = 0; i < products.length; i++) {
    let product = products[i];
-   if (product.includes("Camiseta")) {
+   if (product.toLocaleLowerCase().includes(`Camiseta`.toLocaleLowerCase())) {
       console.log(`Estos productos tienen la palabra camiseta: ${product}`);
    }
 }

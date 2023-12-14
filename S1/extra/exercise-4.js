@@ -5,8 +5,11 @@ const products = [
    { name: "Inpar de zapatos", sellCount: 6 },
 ];
 
+let totalSell = 0;
+
 for (let i = 0; i < products.length; i++) {
    const prod = products[i];
-   let totalSell = prod.sellCount;
-   console.log(totalSell);
+   totalSell += prod.sellCount
+
 }
+console.log(totalSell);
